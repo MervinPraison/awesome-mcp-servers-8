@@ -1,41 +1,34 @@
-# Splunk MCP Server
+## Overview
 
-**Category:** Monitoring  
-**Tags:** Observability, Logs, Security  
-**Website:** https://mcp.pipedream.com/app/splunk
-
-## Description
-Splunk MCP Server is an MCP (Model Context Protocol) server that connects MCP-compatible tools and chat clients to Splunk. It enables running searches, tracking search jobs, and sending events to Splunk from applications or AI assistants, providing visibility and insights across organizational data for security, reliability, and operations analytics.
+Splunk announced the controlled availability of MCP (Model Context Protocol) server in Splunk Cloud Platform, a groundbreaking tool that bridges the gap between Splunk's data analytics capabilities and AI reasoning. The MCP server is a specialized implementation of the Model Context Protocol that enables secure, two-way communication between AI systems and Splunk Cloud Platform.
 
 ## Features
 
-### MCP Server Integration
-- Provides a static MCP server URL usable by any compatible client:  
-  `https://mcp.pipedream.net/v2`
-- Designed to be added as a server to chat-based and other MCP-enabled applications (e.g., ChatGPT / OpenAI clients).
-- Authentication handled when adding/configuring the server in the client application.
+- **Execute Searches**: Run powerful Splunk queries to extract insights and drive intelligent workflows
+- **SPL Query Management**: Generate, explain, and optimize SPL queries using AI tools
+- **Saved Search Management**: Manage and execute saved searches programmatically
+- **Report Creation**: Automate report generation and analysis
+- **Multi-Source Integration**: Combine Splunk data with other sources like Atlassian, cloud APIs, or Kubernetes clusters
+- **Natural Language Interface**: Interact with Splunk data through conversational AI
 
-### Splunk Connectivity
-- Connects an MCP client to a Splunk account to access data and analytics capabilities.
-- Supports configuration of Splunk connection through Pipedream (sign-in and account management).
+## Security & Access Control
 
-### Available Tools (Actions)
-1. **Run Search**  
-   - Executes a Splunk search query.  
-   - Returns search results to the calling client.  
-   - Suitable for querying logs, security events, performance data, and other indexed Splunk data.
+- Enterprise-grade authentication and authorization
+- Built-in RBAC (Role-Based Access Control)
+- Adherence to existing Splunk authentication and access controls
+- Prevention of unauthorized data exposure
 
-2. **Get Search Job Status**  
-   - Retrieves the status of a previously executed Splunk search job.  
-   - Allows checking whether a search is running, completed, or failed, and managing long-running or asynchronous search operations.
+## Benefits
 
-3. **Create Event**  
-   - Sends a new event to a specified Splunk index.  
-   - Enables programmatic ingestion of custom events, logs, or metrics from MCP clients into Splunk.
+- Automate repetitive tasks and save valuable time
+- Enable AI to execute searches, manage saved searches, and create reports
+- Create unified operational views by integrating multiple data sources
+- AI-driven IT operations and security investigations
 
-### Usage & Configuration
-- Single shared MCP endpoint for all clients; each client authenticates separately. 
-- Guides available for specific chat clients (e.g., ChatGPT / OpenAI) via the configuration documentation on Pipedream.
+## Availability
+
+Available in Splunk Cloud Platform in controlled availability. Also listed in the AI Agents and Tools storefront in AWS Marketplace and Azure Marketplace.
 
 ## Pricing
-Pricing information is not provided in the available content. Refer to the Splunk MCP Server page on Pipedream for current pricing or plan details.
+
+Enterprise pricing for Splunk Cloud Platform customers. Contact Splunk for details.

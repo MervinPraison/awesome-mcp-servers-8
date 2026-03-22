@@ -1,34 +1,72 @@
-# Keycloak MCP Server
+## Overview
 
-## Description
-An open-source Model Context Protocol (MCP) server for Keycloak administration that enables natural language management of Keycloak realms and users. It supports creating, deleting, and listing users and realms via MCP-compatible clients such as Claude Desktop.
+An MCP server for Keycloak designed to work with Keycloak for identity and access management, covering Users, Realms, Clients, Roles, Groups, IDPs, and Authentication. This implementation enables AI-powered administration of Keycloak through the Model Context Protocol with native builds available.
 
 ## Features
-- MCP server implementation for Keycloak user management
-- Administration of Keycloak users and realms via natural language
-- Supports creating, deleting, and listing users
-- Supports creating, deleting, and listing realms
-- Integrates with Claude Desktop
-- Compatible with other MCP clients
-- Distributed as an NPM package
-- Configurable via Claude Desktop configuration file
-- Supports local development and modification of the server
 
-## Installation
-- **Via Smithery**: Can be installed for Claude Desktop through Smithery using the published server configuration.
-- **Via NPM (recommended)**: Available as an NPM package for installation into Node.js environments.
-- **Local Development Setup**: Repository includes configuration (e.g., `tsconfig.json`, `package.json`) to run and develop the server locally.
+- **User Management**: Create, update, delete users programmatically
+- **Realm Administration**: Manage Keycloak realms and configurations
+- **Client Management**: Configure OAuth/OIDC clients
+- **Role Management**: Assign and manage roles
+- **Group Operations**: Manage user groups and memberships
+- **IDP Integration**: Configure identity providers
+- **Authentication Flows**: Manage authentication configurations
+- **Natural Language Admin**: Administer Keycloak through AI assistants
 
-## Configuration
-- **Using NPM package**: Configure the server in the Claude Desktop configuration file to expose the Keycloak tools via MCP.
-- **For local development**: Local configuration supports running the MCP server directly from the repository source.
+## Security Capabilities
 
-## Available Tools
-### `create-user`
-- **Description**: Creates a new user in a specified realm.
-- **Inputs**:
-  - `realm`
-  - Additional user-related fields (not fully visible in the provided content).
+Keycloak provides:
+- OAuth 2.0 and OIDC support
+- SAML authentication
+- Single Sign-On (SSO)
+- Social login integration
+- Multi-factor authentication
+- User federation
+- Fine-grained authorization
+
+## Use Cases
+
+- AI-assisted user provisioning
+- Automated access management
+- Identity governance through natural language
+- Realm configuration management
+- Client application setup
+- Role-based access control administration
+- Authentication flow configuration
+
+## MCP Authorization Server
+
+Keycloak can serve as an authorization server for MCP implementations:
+- OAuth 2.0 token-based authentication
+- Short-lived scoped access tokens
+- Identity provider integration
+- Token introspection and validation
+- PKCE support for secure flows
+
+## Integration Benefits
+
+- Natural language IAM administration
+- Automated user lifecycle management
+- AI-powered access control
+- Simplified realm configuration
+- Reduced administrative overhead
+- Secure authentication for MCP servers
+
+## Deployment Options
+
+- Self-hosted with Docker/Kubernetes
+- Native builds for performance
+- Cloud deployment support
+- High availability configurations
+
+## Keycloak Discourse Search
+
+Includes searching Keycloak discourse for community knowledge and troubleshooting.
+
+## Compatibility
+
+Works with Claude Desktop, Cursor, and any MCP-compatible AI assistant. Integrates with MCP servers requiring OAuth/OIDC authentication.
 
 ## Pricing
-- **Open-source**: Hosted on GitHub and available to use and modify for free.
+
+Free and open-source. Enterprise support available through Red Hat SSO.

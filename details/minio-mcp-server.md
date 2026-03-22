@@ -1,36 +1,41 @@
-# MinIO MCP Server
+## Overview
 
-**Description**  
-MinIO MCP Server exposes MinIO, a high-performance, S3-compatible object storage system, to AI agents and applications for large-scale data operations, including AI/ML, data lake, and database workloads.
-
-**Category**  
-File Management MCP Servers
-
-**Brand**  
-- Name: MinIO  
-- Logo: https://min.io/resources/img/logo.svg
-
-**Source**  
-- MCP Server page: https://mcp.pipedream.com/app/minio
-- MCP Server URL (static for all clients): `https://mcp.pipedream.net/v2`
+MinIO is previewing an MCP server that enables interaction with and management of MinIO AIStor, their commercial object-store offering, through natural language conversations with LLMs such as Anthropic Claude or OpenAI ChatGPT. This implementation makes exploring and using data in an AIStor object store easier than ever.
 
 ## Features
-- **S3-compatible object storage**: Implements an S3-compatible interface, allowing use with existing S3 tools, SDKs, and workflows.
-- **High-performance storage**: Optimized for demanding workloads that require fast object storage access.
-- **Support for large-scale workloads**:
-  - AI / ML workloads
-  - Data lake workloads
-  - Database-oriented workloads using object storage
-- **MCP server integration**:
-  - Exposes MinIO as an MCP (Model Context Protocol) server for AI agents and chat-based tools.
-  - Single static MCP server URL (`https://mcp.pipedream.net/v2`) usable across compatible clients.
-  - Authentication handled when adding the server within the client/application.
-- **Client-agnostic setup**: Designed to be added to different chat or AI clients via configuration, using the same MCP endpoint.
 
-## Usage / Setup
-- Copy the MCP server URL: `https://mcp.pipedream.net/v2`.
-- Add the server to your compatible chat or AI client and authenticate there.
-- Additional configuration details are available on the provider’s configuration page (linked from the source site).
+- **25+ Tools**: Comprehensive toolset for object storage operations
+- **Bucket Management**: List, create, remove, and check bucket existence
+- **Object Operations**: Upload, download, copy, delete objects
+- **Presigned URLs**: Generate presigned URLs for secure temporary access
+- **Content Retrieval**: Support for both text and binary files
+- **Administrative Functions**: Core commands like list buckets, get object tags, get bucket transition rules
+- **Conversational Interface**: Natural language interaction with object storage clusters
+
+## Core Tools
+
+The server exposes four core tools:
+- ListBuckets: List all buckets in the storage cluster
+- ListObjects: List objects within a bucket
+- GetObject: Retrieve object contents
+- PutObject: Upload objects to storage
+
+## Technical Implementation
+
+Built using Go (production version) and TypeScript with the MCP SDK. Provides a secure and standardized way for LLMs to interface with S3-compatible storage.
+
+## Use Cases
+
+Administrators can perform tasks like:
+- Review bucket contents through conversation
+- Analyze objects and tag them for future processing
+- Manage object storage infrastructure using human-language commands
+- Integrate object storage operations into AI-powered workflows
+
+## Compatibility
+
+Works with S3-compatible APIs and MinIO object storage. Compatible with Claude, ChatGPT, and other MCP-enabled AI assistants.
 
 ## Pricing
-- Not specified in the provided content.
+
+MCP server is in preview. MinIO AIStor pricing applies separately for the object storage service.

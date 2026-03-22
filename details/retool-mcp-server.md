@@ -1,40 +1,61 @@
-# Retool MCP Server
-
-An MCP Server integration for Retool, enabling MCP-based automation and control of internal tools built on Retool.
-
 ## Overview
-- **Category:** Development Tools – MCP Servers  
-- **Provider / Brand:** Retool (via Pipedream Connect)  
-- **Purpose:** Connect MCP-compatible chat or agent clients to Retool apps, so they can automate and control internal tools built on Retool.
+
+Retool has announced an official MCP server (currently in beta) that allows AI agents to inspect and query Retool organizations - apps, automations, resources, users, and more. This integration enables AI-powered management of internal tools and low-code applications through natural language.
 
 ## Features
-- **Static MCP Server Endpoint**  
-  - Single static MCP server URL usable across compatible clients:  
-    `https://mcp.pipedream.net/v2`  
-  - Authentication handled when adding the server to each client/application.
 
-- **Client-Agnostic Integration**  
-  - Designed to work with multiple MCP-enabled chat or agent clients.  
-  - Same server URL for all clients; configuration differences are handled client-side.
+- **Organization Inspection**: Query Retool organization structure and metadata
+- **App Management**: Access and manage Retool applications
+- **Automation Workflows**: Inspect and control automation workflows
+- **Resource Querying**: Query database connections and API resources
+- **User Management**: Access user and permission information
+- **Agent Integration**: Configure MCP servers as resources for Retool agents
+- **Remote MCP Support**: Connect to remote-hosted MCP servers
 
-- **Retool Integration for Internal Tools**  
-  - Connects MCP clients to Retool-based internal tools.  
-  - Enables automation and control flows that operate on apps built on Retool (e.g., internal dashboards, admin tools, and workflows).
+## Two Setup Options
 
-- **Configuration Documentation**  
-  - Dedicated configuration instructions available via a separate Configuration page (per-client setup guidance).
+### 1. Official Retool MCP Server (Beta)
+- Hosted by Retool
+- Query Retool organization data
+- App and workflow management
+- User and resource inspection
 
-- **Pipedream Connect Infrastructure**  
-  - Hosted and powered by Pipedream Connect.  
-  - Governed by Pipedream’s standard terms and privacy policy.
+### 2. Community MCP Server
+- For self-hosted Retool instances
+- Create apps and manage workflows
+- Full Retool instance control
+- Available at TechnicalRhino/retool-mcp
+
+## Use Cases
+
+- AI-assisted app development in Retool
+- Automated workflow management
+- Resource configuration and monitoring
+- User and permission auditing
+- App usage analytics
+- Query performance analysis
+- Workflow execution monitoring
+
+## Integration with Retool Agents
+
+If you have a public URL for an MCP server, you can configure that MCP server as a resource and then give your Retool agent access to all the tools that server provides.
+
+## Third-Party Integration
+
+Retool MCP integration via Improvado connects Retool data to AI agents, allowing teams to:
+- Query app usage metrics
+- Analyze query performance
+- Monitor workflow execution
+- Use plain-language prompts for data access
+
+## Current Limitations
+
+Retool currently only supports remote-hosted MCPs. Local MCP servers need to be exposed via public URLs.
+
+## Compatibility
+
+Works with Claude, Cursor, Windsurf, and any MCP-compatible AI assistant.
 
 ## Pricing
-- Not specified in the provided content.
 
-## Links
-- **MCP Server URL:** `https://mcp.pipedream.net/v2`  
-- **Configuration page:** `/configuration` (on the Pipedream site)  
-- **Source / App page:** https://mcp.pipedream.com/app/retool  
-- **Provider:** https://pipedream.com/connect  
-- **Terms:** https://pipedream.com/terms  
-- **Privacy Policy:** https://pipedream.com/privacy
+Retool offers a free tier for up to 5 users. Professional and Enterprise plans available for larger teams and advanced features.

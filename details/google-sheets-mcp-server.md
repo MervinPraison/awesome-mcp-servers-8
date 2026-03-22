@@ -1,80 +1,59 @@
-# Google Sheets MCP Server
+## Overview
 
-**Brand:** Google  
-**Category:** Data Access & Integration – MCP Servers  
-**Slug:** `google-sheets-mcp-server`
-
-## Description
-MCP Server for Google Sheets that enables creation, editing, and management of online spreadsheets via MCP-compatible tools and workflows. It uses a static MCP server URL and Google account authentication to operate on Sheets in real time from any connected client.
-
-## MCP Server Details
-- **MCP Server URL:** `https://mcp.pipedream.net/v2`
-- **Authentication:** Google account sign-in when adding the server to an MCP-compatible application
-- **Usage:** Add the server URL to your chat or MCP client, then authorize access to Google Sheets
+A Python-based MCP server that acts as a bridge between MCP-compatible clients (like Claude Desktop) and the Google Sheets API. This integration allows AI assistants to interact with Google Spreadsheets using AI-driven automation and data manipulation workflows.
 
 ## Features
 
-### General Capabilities
-- Create and edit Google Sheets spreadsheets via MCP tools
-- Work with online spreadsheets in real time
-- Secure, account-based access to Sheets
-- Accessible from any MCP-compatible client or device
-- 31 MCP actions available as tools for Google Sheets operations
+- **Sheet Creation**: Create new Google Sheets spreadsheets
+- **Data Operations**: Read, write, update, and delete spreadsheet data
+- **Chart Generation**: Automatically generate charts and visualizations
+- **Batch Operations**: Execute multiple operations efficiently
+- **Formatting**: Apply cell formatting and styling
+- **Sharing**: Manage sheet sharing and permissions
+- **Drive Integration**: Seamless integration with Google Drive
+- **Type Safety**: Comprehensive tools with type-safe operations
 
-### Available Tools (Actions)
-Below are the explicitly listed actions exposed as MCP tools:
+## Comprehensive Tools
 
-1. **Add Single Row**  
-   - Add a single row of data to a Google Sheet
-   - Optionally insert at a specific row index (e.g., row 2 to add below headers, shifting existing data down)
+Provides tools for various operations including:
+- CRUD operations (Create, Read, Update, Delete)
+- Listing and searching spreadsheets
+- Batch data operations
+- Sharing and permission management
+- Cell and range formatting
+- Formula management
 
-2. **Update Conditional Format Rule**  
-   - Modify an existing conditional formatting rule in a sheet
+## Use Cases
 
-3. **Set Data Validation**  
-   - Add data validation rules to cells, including:
-     - Dropdown lists
-     - Checkboxes
-     - Date validation
-     - Number validation
+- Automated data entry and updates
+- Report generation and distribution
+- Data analysis and visualization
+- Spreadsheet template instantiation
+- Integration with business workflows
+- Collaborative data management
+- Automated chart creation
 
-4. **Merge Cells**  
-   - Merge a specified range of cells into a single cell
+## Integration Benefits
 
-5. **Delete Conditional Format Rule**  
-   - Remove a conditional formatting rule by its index in the sheet
+- Natural language spreadsheet operations
+- Reduced manual data entry
+- AI-assisted data analysis
+- Automated reporting workflows
+- Simplified chart generation
+- Team collaboration enhancement
 
-6. **Add Protected Range**  
-   - Add edit protection to a cell range
-   - Configure permissions for who can edit the protected range
+## Technical Implementation
 
-7. **Add Conditional Format Rule**  
-   - Create conditional formatting rules, including:
-     - Color scales
-     - Custom formula-based rules
+Built with Python and integrates with Google Sheets API v4 and Google Drive API for comprehensive spreadsheet management.
 
-8. **Upsert Row**  
-   - Insert or update (upsert) a row of data in a Google Sheet
+## Authentication
 
-9. **Update Row**  
-   - Update an existing row in a spreadsheet
+Requires Google OAuth 2.0 credentials and appropriate Google Workspace permissions.
 
-10. **Update Multiple Rows**  
-    - Update multiple rows at once, defined by a range
+## Compatibility
 
-11. **Update Formatting**  
-    - Update cell formatting in a spreadsheet (e.g., style-related properties)
-
-12. **Update Cell**  
-    - Update the contents of a specific cell in a spreadsheet
-
-13. **Move Dimension**  
-    - Move a dimension (such as rows or columns) within a spreadsheet
-
-14. **List Worksheets**  
-    - Retrieve the list of worksheets (sheets/tabs) in a spreadsheet (truncated in source, but implied by the action name)
-
-> Note: The integration exposes a total of **31 Google Sheets actions** as MCP tools; only the above subset is explicitly listed in the provided content.
+Works with Claude Desktop, Claude Code, Cursor, Windsurf, and any MCP-compatible AI assistant.
 
 ## Pricing
-No pricing information is provided in the available content.
+
+Free with Google Workspace. Google Workspace Business and Enterprise plans offer enhanced features and storage.

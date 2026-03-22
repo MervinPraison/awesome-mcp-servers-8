@@ -1,31 +1,54 @@
-# Rocket.Chat MCP Server
-
-An MCP Server integration for Rocket.Chat, exposing its communication and collaboration platform APIs to MCP-compatible clients.
-
-- **Category:** Messaging MCP Servers  
-- **Tags:** team-chat, collaboration, open-source  
-- **Source URL:** https://mcp.pipedream.com/app/rocket_chat  
-- **MCP Server URL:** `https://mcp.pipedream.net/v2`
-
 ## Overview
-The Rocket.Chat MCP Server is a middleware integration that exposes Rocket.Chat’s communication and collaboration APIs via the Model Context Protocol (MCP). It enables MCP-compatible clients (such as AI assistants and other tools) to connect to and work with Rocket.Chat workspaces.
+
+A read-only Rocket.Chat MCP server integration that enables searching, retrieving, and summarizing channel messages and DMs. This server integrates with Rocket.Chat instances to provide team communication through AI assistants, supporting channel management, message operations, and collaborative workflows.
 
 ## Features
-- **MCP-compatible endpoint**  
-  - Single static MCP server URL usable across supported MCP clients: `https://mcp.pipedream.net/v2`.
-- **Rocket.Chat integration**  
-  - Connects MCP clients to Rocket.Chat’s team chat and collaboration platform.  
-  - Designed for open-source, self-hosted, or cloud Rocket.Chat deployments (as supported by the underlying Rocket.Chat APIs).
-- **Authentication at client setup**  
-  - Authentication is handled when adding the server to an application or client (per client’s configuration flow).
-- **Client-agnostic configuration**  
-  - The same MCP server URL is used for different MCP-enabled chat clients.  
-  - Additional configuration details are available via the linked configuration page (per Pipedream / client docs).
 
-## Setup & Integration
-- Use the static MCP server URL in your MCP-enabled client.  
-- Follow your client’s instructions to add a new MCP server and complete authentication.  
-- Optional: consult the full configuration page on Pipedream for client-specific setup steps.
+- **Channel Management**: Access and search channels
+- **Message Retrieval**: Search and retrieve channel messages and DMs
+- **Message Summarization**: AI-powered message summaries
+- **User Information**: Access user profiles and status
+- **Read-Only Access**: Safe integration without modification capabilities
+- **Automated Notifications**: Set up notifications for collaborative workflows
+- **Natural Language Queries**: Ask questions about team conversations
+
+## Open Source Benefits
+
+- **Self-Hosted**: Deploy on private servers with complete data control
+- **Customizable**: Modify features and white label the chat widget
+- **Free Alternative**: Open-source alternative to Slack and Microsoft Teams
+- **Privacy Control**: Keep all communication data on your infrastructure
+
+## Use Cases
+
+- Team communication search and discovery
+- Message history analysis
+- Automated conversation summaries
+- Cross-channel information retrieval
+- Team collaboration insights
+- Communication analytics
+- Knowledge base building from chat history
+
+## Integration Benefits
+
+- Natural language access to team communications
+- Reduced time searching for information
+- AI-assisted knowledge discovery
+- Automated conversation insights
+- Enhanced team collaboration
+
+## Technical Implementation
+
+The server generates and serves Rocket.Chat MCP tools from natural language capability requests, providing programmatic access to Rocket.Chat API functionality.
+
+## Security
+
+Read-only access ensures safe integration without risk of accidental message modifications or deletions.
+
+## Compatibility
+
+Works with self-hosted Rocket.Chat instances and any MCP-compatible AI assistant including Claude, Cursor, and Windsurf.
 
 ## Pricing
-The provided content does not list any pricing or plan details for the Rocket.Chat MCP Server. Refer to the source URL or Pipedream documentation for current pricing information, if applicable.
+
+Free and open-source. Self-hosting costs apply. Rocket.Chat offers Enterprise features for additional capabilities.
