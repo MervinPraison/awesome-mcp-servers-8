@@ -123,11 +123,11 @@ The public-facing website is based on the open-source [Directory Website Templat
 - [Database MCP Servers (6)](#database-mcp-servers-2)
 - [Design Tools (16)](#design-tools)
 - [Design Tools (1)](#design-tools-1)
-- [Developer Productivity & Utilities (1)](#developer-productivity--utilities)
+- [Developer Productivity & Utilities (5)](#developer-productivity--utilities)
 - [Developer Tools (1)](#developer-tools-1)
 - [Developer Tools Mcp Servers (126)](#developer-tools-mcp-servers-1)
 - [Developer Tools MCP Servers (3)](#developer-tools-mcp-servers-2)
-- [Development Tools (5)](#development-tools)
+- [Development Tools (6)](#development-tools)
 - [Development Tools MCP Servers (21)](#development-tools-mcp-servers-1)
 - [Development Tools MCP Servers (7)](#development-tools-mcp-servers-2)
 - [Document Management Mcp Servers (10)](#document-management-mcp-servers)
@@ -163,8 +163,8 @@ The public-facing website is based on the open-source [Directory Website Templat
 - [Google Workspace (5)](#google-workspace)
 - [Healthcare & Life Sciences (20)](#healthcare--life-sciences)
 - [Healthcare & Life Sciences Mcp Servers (14)](#healthcare--life-sciences-mcp-servers)
-- [Healthcare Life Sciences (24)](#healthcare-life-sciences)
-- [Healthcare Life Sciences (2)](#healthcare-life-sciences-1)
+- [Healthcare Life Sciences (23)](#healthcare-life-sciences)
+- [Healthcare Life Sciences (5)](#healthcare-life-sciences-1)
 - [Home Automation Mcp Servers (2)](#home-automation-mcp-servers)
 - [Home Automation MCP Servers (3)](#home-automation-mcp-servers-1)
 - [Home Automation MCP Servers (3)](#home-automation-mcp-servers-2)
@@ -189,7 +189,7 @@ The public-facing website is based on the open-source [Directory Website Templat
 - [Messaging MCP Servers (56)](#messaging-mcp-servers-1)
 - [Monitoring (8)](#monitoring-1)
 - [Monitoring & Observability (1)](#monitoring--observability)
-- [Monitoring Observability (6)](#monitoring-observability)
+- [Monitoring Observability (7)](#monitoring-observability)
 - [Multimedia (20)](#multimedia)
 - [Multimedia (1)](#multimedia-1)
 - [News (2)](#news)
@@ -2771,9 +2771,9 @@ The public-facing website is based on the open-source [Directory Website Templat
 - [Bright Data MCP](https://brightdata.com/products/mcp) - MCP server that enables discovery, extraction, and interaction with web content through a single interface for automated access across the public internet. Sponsored solution for AI-powered web data handling. ([Read more](/details/bright-data-mcp.md)) `Web Scraping` `Data Extraction` `Sponsor`
 - [Firecrawl MCP](https://firecrawl.dev) - Adds powerful web scraping and search capabilities to LLM clients like Cursor and Claude. ([Read more](/details/firecrawl-mcp.md)) `Official` `Web Scraping` `Search`
 - [Jina Reader MCP](https://jina.ai/reader) - Turns URLs into clean Markdown by stripping boilerplate, nav, and ads for agent focus on content. ([Read more](/details/jina-reader-mcp.md)) `Markdown` `Web Scraping` `Clean Content`
-- [Newsletter Commerce MCP](https://github.com/teamsincetoday/newsletter-commerce-mcp) - Extracts shoppable products and sponsor mentions from newsletter editions using AI-powered content intelligence. Generates affiliate-ready product sections for newsletters. ([Read more](/details/newsletter-commerce-mcp.md)) `Newsletter` `Affiliate` `Content Intelligence`
+- [Newsletter Commerce MCP](https://github.com/teamsincetoday/newsletter-commerce-mcp) - Extracts shoppable products and sponsor mentions from newsletter editions using AI-powered content intelligence. Generates affiliate-ready product sections for newsletters. Ideal for content creators looking to monetize newsletters through affiliate links. ([Read more](/details/newsletter-commerce-mcp.md)) `Ai Powered` `Affiliate` `Content Intelligence`
 - [Podcast Commerce MCP](https://github.com/teamsincetoday/podcast-commerce-mcp) - Extracts affiliate products, sponsor mentions, and shoppable recommendations from podcast episodes using AI-powered content intelligence. Features cross-show product comparison and show notes generation. ([Read more](/details/podcast-commerce-mcp.md)) `Podcast` `Affiliate` `Content Intelligence`
-- [Recipe Commerce MCP](https://github.com/teamsincetoday/recipe-commerce-mcp) - Extracts affiliate-ready product recommendations from recipe content using AI-powered ingredient and kitchen tool analysis. Remote Streamable HTTP endpoint on Cloudflare Workers. ([Read more](/details/recipe-commerce-mcp.md)) `Recipes` `Affiliate` `Cloudflare`
+- [Recipe Commerce MCP](https://github.com/teamsincetoday/recipe-commerce-mcp) - Extracts affiliate-ready product recommendations from recipe content using AI-powered ingredient and kitchen tool analysis. Provides a remote Streamable HTTP endpoint on Cloudflare Workers for easy integration. ([Read more](/details/recipe-commerce-mcp.md)) `Ai Powered` `Affiliate` `Recipe Analysis`
 
 ## Content Management Mcp Servers
 
@@ -3060,7 +3060,11 @@ The public-facing website is based on the open-source [Directory Website Templat
 
 ## Developer Productivity & Utilities
 
+- [antigravity-link-extension](https://github.com/cafeTechne/antigravity-link-extension) - MCP server + OpenAPI API to control Antigravity IDE instances (snapshot, send, stop generation, switch instance, task/walkthrough/plan retrieval) with a mobile companion UI. ([Read more](/details/antigravity-link-extension.md)) `Ide` `Openapi` `Mobile Ui`
 - [curl-mcp](https://github.com/MartinPSDev/curl-mcp) - Transforms natural language instructions into curl commands, supporting English and Spanish, for seamless HTTP requests. ([Read more](/details/curl-mcp.md)) `Http` `Curl` `Natural Language`
+- [lazymac-k-mcp](https://github.com/lazymac2x/lazymac-k-mcp) - Korean wedge MCP server with PIPA compliance, KRW + BOK rates, 사업자등록번호 lookup, address geocoding, NLP. Run with npx -y @lazymac/k-mcp. ([Read more](/details/lazymac-k-mcp.md)) `Korean` `Nlp` `Geocoding`
+- [lazymac-mcp](https://github.com/lazymac2x/lazymac-mcp) - Unified MCP server exposing 42+ developer tools (qr, ip-geo, ai-cost, llm-router, k-privacy, korean-nlp) backed by Cloudflare Workers. Can be run with npx -y @lazymac/mcp. ([Read more](/details/lazymac-mcp.md)) `Cloudflare Workers` `Developer Tools` `Multi Tool`
+- [rendoc](https://rendoc.dev) - Generate professional PDF documents from HTML templates and dynamic data via MCP. Features template management, live preview, and usage tracking through rendoc.dev API. ([Read more](/details/rendoc.md)) `Pdf Generation` `Html Templates` `Live Preview`
 
 ## Developer Tools
 
@@ -3208,6 +3212,7 @@ The public-facing website is based on the open-source [Directory Website Templat
 - [Google Calendar MCP server](https://developers.google.com/calendar/api) - MCP server providing context from calendars, schedules, and availability for LLMs. ([Read more](/details/google-calendar-mcp-server.md)) `Open Source` `Self Hosted`
 - [IaC Memory MCP Server](https://github.com/AgentWong/iac-memory-mcp-server) - A personal project exploring whether Claude 3.5 Sonnet can write a moderately complex MCP Server in Python for infrastructure-as-code context management. ([Read more](/details/iac-memory-mcp-server.md)) `Iac` `Ai Code Generation` `Claude`
 - [MCP Server CodeGraph](https://github.com/CartographAI/mcp-server-codegraph) - MCP server for graph representation of a codebase, enabling AI assistants to understand code structure and dependencies. ([Read more](/details/mcp-server-codegraph.md)) `Code Graph` `Code Structure` `Dependency Analysis`
+- [My Experiment](https://github.com/Xinruims/my_experiment) - Enhance Roo Code with MCP server implementations for AI-driven coding tools. Offers seamless integration and configuration across platforms. Facilitates development workflows with AI assistance. ([Read more](/details/my-experiment.md)) `Ai Integration` `Coding` `Open Source`
 
 ## Development Tools MCP Servers
 
@@ -3341,7 +3346,7 @@ The public-facing website is based on the open-source [Directory Website Templat
 ## Email Marketing
 
 - [Klaviyo MCP](https://developers.klaviyo.com/en/reference/mcp_server) - Official MCP server for Klaviyo email and SMS data, enabling queries on campaign performance, flows, and audience segments. ([Read more](/details/klaviyo-mcp.md)) `Read Only` `Beta` `Email Sms`
-- [Smartlead MCP Server Local](https://github.com/jean-technologies/smartlead-mcp-server-local) - Facilitates seamless interaction with Smartlead's email marketing features through a simplified MCP server interface. Supports AI assistants and automation tools for email marketing tasks. ([Read more](/details/smartlead-mcp-server-local.md)) `Email Marketing` `Mcp Server` `Automation`
+- [Smartlead MCP Server Local](https://github.com/jean-technologies/smartlead-mcp-server-local) - Facilitates seamless interaction with Smartlead's email marketing features through a simplified MCP server interface, supporting AI assistants and automation tools. It enables integration for AI-driven email campaigns and management. ([Read more](/details/smartlead-mcp-server-local.md)) `Email Marketing` `Automation` `Ai Integration`
 
 ## Enterprise Data
 
@@ -3797,7 +3802,6 @@ The public-facing website is based on the open-source [Directory Website Templat
 - [mcp-cerebra-legal-server](https://github.com/yoda-digital/mcp-cerebra-legal-server) - Cerebra Legal is an enterprise-grade server for legal reasoning and analysis, offering domain-specific tools for structured legal thinking, follow-up questioning, and result presentation. Applicable to legal aspects in healthcare compliance. ([Read more](/details/mcp-cerebra-legal-server.md)) `Legal` `Reasoning` `Enterprise`
 - [mcp-server-lims](https://github.com/sheffler/mcp-server-lims) - Facilitates AI-driven management of laboratory workflows by simulating instrument data processing and integrating with MCP tools. Supports lab information management. ([Read more](/details/mcp-server-lims.md)) `Laboratory` `Lims` `Ai Driven`
 - [mcps (gosset-ai)](https://github.com/gosset-ai/mcps) - A suite of MCP servers enabling AI assistants to access and interact with various biomedical databases and resources for research purposes. Key for life sciences and biomedical research. ([Read more](/details/mcps-gosset-ai.md)) `Biomedical` `Research` `Databases`
-- [myweight-mcp-server](https://github.com/shinichi-takayanagi/myweight-mcp-server) - Connects to the Health Planet API to securely retrieve and analyze weight data using any MCP-compatible client. Relevant for personal health tracking in healthcare applications. ([Read more](/details/myweight-mcp-server.md)) `Healthcare` `Fitness` `Api`
 - [open-dental-mcp](https://github.com/AojdevStudio/open-dental-mcp) - Facilitates natural language querying of OpenDental documentation using a Qdrant vector database. ([Read more](/details/open-dental-mcp.md)) `Dental` `Qdrant` `Nl Query`
 - [oura-mcp](https://github.com/johnie/oura-mcp) - Facilitates interaction with Oura Ring data through an MCP server, offering endpoints for personal health metrics. Supports wearable health data integration. ([Read more](/details/oura-mcp.md)) `Wearable` `Health Metrics` `Oura Ring`
 - [PubMed-MCP-Server](https://github.com/codingaslu/PubMed-MCP-Server) - Leverages the FastMCP framework to asynchronously search PubMed for article abstracts using BioPython's Entrez module. ([Read more](/details/pubmed-mcp-server.md)) `Pubmed` `Biopython` `Research`
@@ -3811,6 +3815,9 @@ The public-facing website is based on the open-source [Directory Website Templat
 
 - [BioContext](https://github.com/BioContext/BioContext-main) - BioContext provides seamless integration with major biological databases through a collection of MCP servers, facilitating AI-driven data access and analysis. Targeted at bioinformatics and life sciences research. ([Read more](/details/biocontext.md)) `Bioinformatics` `Databases` `Ai Driven`
 - [MCPS](https://github.com/gosset-ai/mcps) - A suite of MCP servers enabling AI assistants to access and interact with various biomedical databases and resources for research purposes. Supports integration with healthcare and life sciences data sources. ([Read more](/details/mcps.md)) `Biomedical` `Research` `Open Source`
+- [myweight-mcp-server](https://github.com/shinichi-takayanagi/myweight-mcp-server) - Connects to the Health Planet API to securely retrieve and analyze weight data using any MCP-compatible client. ([Read more](/details/myweight-mcp-server.md)) `Health` `Weight Tracking` `Api`
+- [omcp_a2a](https://github.com/fastomop/omcp_a2a) - Facilitates LLM-driven analysis of healthcare data in OMOP format through modular MCP servers and A2A protocol integration. Designed for AI assistants to access and analyze standardized healthcare datasets. ([Read more](/details/omcp_a2a.md)) `Healthcare` `Omop` `A2a`
+- [openehr-mcp-server](https://github.com/deak-ai/openehr-mcp-server) - Facilitates seamless integration with openEHR REST APIs, enabling the creation and management of electronic health records and compositions. Supports AI-driven EHR operations. ([Read more](/details/openehr-mcp-server.md)) `Openehr` `Ehr` `Healthcare`
 
 ## Home Automation Mcp Servers
 
@@ -4175,6 +4182,7 @@ The public-facing website is based on the open-source [Directory Website Templat
 
 ## Monitoring Observability
 
+- [Alibaba Cloud Observability MCP Server](https://github.com/aliyun/alibabacloud-observability-mcp-server) - Facilitates seamless integration with Alibaba Cloud's observability products, offering tools for efficient log and application monitoring. ([Read more](/details/alibaba-cloud-observability-mcp-server.md)) `Cloud` `Observability` `Logs`
 - [FutureAGI](https://futureagi.com/) - Observability and monitoring tool with its own MCP server for connecting to wider tools and services. Offers dynamic tool discovery for testing and evaluation to combat AI hallucinations. ([Read more](/details/futureagi.md)) `Observability` `Mcp` `Monitoring`
 - [Grafana MCP](https://github.com/grafana/mcp-grafana) - Connects agents to Grafana metrics and dashboards. Allows querying data sources and retrieving visualization snapshots for performance diagnosis. Docker self-hosted. ([Read more](/details/grafana-mcp.md)) `Docker` `Self Hosted` `Metrics` `Dashboards`
 - [PagerDuty MCP Server](https://github.com/PagerDuty/pagerduty-mcp-server) - On-call assistant MCP for incident details, on-call schedules, and resolution workflows. Supports Docker and remote. Ideal for automated alerting. ([Read more](/details/pagerduty-mcp-server.md)) `Docker` `Remote` `On Call` `Incidents`
