@@ -5258,7 +5258,7 @@ The public-facing website is based on the open-source [Directory Website Templat
 
 ## ⭐ Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=ever-works/awesome-mcp-servers&type=Date)](https://star-history.com/#ever-works/awesome-mcp-servers&Date)
+[![Star History Chart](https://stats-github.ever.works/svg?repos=ever-works/awesome-mcp-servers&type=Date)](https://stats-github.ever.works/#ever-works/awesome-mcp-servers&Date)
 
 ## ™️ Legal
 
